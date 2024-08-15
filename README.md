@@ -55,30 +55,8 @@ Before you click the "Complete Assessment" button on the Learning Platform, add 
 4. Can you describe, in detail, the algorithm that is in the `main` module?
 
    > This algorithm is used to generate and display HTML dynamically within a webpage. Starting with `const mainContainer = document.querySelector("#container")`
-   Selects the HTML element with the `id` of `container` and stores it in the `mainContainer` variable. This is where the generated HTML content will be placed on the web page. 
-
-   const applicationHTML = `
-    <h1>Make a Memory for Kids</h1>
-    <article class="details">
-        <section class="detail--column list details__kids">
-            <h2>Kids</h2>
-            ${Kids()}
-        </section>
-        <section class="detail--column details__celebrities">
-            <h2>Celebrities</h2>
-            ${Celebrities()}
-        </section>
-    </article>
-
-    <article class="assignments">
-        <h2>Pairings</h2>
-        ${Pairings()}
-    </article>
-`
-Next is a constructed string that contains the structure of the HTML that is stored in the `applicationHTML` variable
-The string contains a title withing the <h1> tag, which displays the heading on the page. Then is the <article class="details">: which is creating a section of the page dedicated to displaying details. Now using the <section class="detail--column list details__kids"> we are creating a specific section for displaying this 
-list of kids. Inside this section we have a <h2> subheading reading "Kids" and we also dynamically insert the HTML returned by the `Kids()` function, which generates our list of kids. Same thing for the next part, we set up a new section <section class="detail--column details__celebrities">: which is now creating a section for our list of celebrities to go. Inside here we have our <h2> subheading letting us know that these are the celebrities and we then insert our `Celebrities()` function to get our generated list of celebrities. Now, we make a new section using the <article> tag and assigning it the class "assignments".
-This is where our list of pairings of kids and celebrities will go. Inside we have the <h2> subheading telling us this is our pairings, and now we dynamically insert our `Pairings()` function to get our generated list of pairings. Lastly, `mainContainer.innerHTML = applicationHTML` this is where the code takes all the HTML it built and actually places it onto the web page.
+   Selects the HTML element with the `id` of `container` and stores it in the `mainContainer` variable. This is where the generated HTML content will be placed on the web page. Next is a constructed string that contains the structure of the HTML that is stored in the `applicationHTML` variable
+   The string contains a title withing the <h1> tag, which displays the heading on the page. Then is the <article class="details">: which is creating a section of the page dedicated to displaying details. Now using the <section class="detail--column list details__kids"> we are creating a specific section for displaying this list of kids. Inside this section we have a <h2> subheading reading "Kids" and we also dynamically insert the HTML returned by the `Kids()` function, which generates our list of kids. Same thing for the next part, we set up a new section <section class="detail--column details__celebrities">: which is now creating a section for our list of celebrities to go. Inside here we have our <h2> subheading letting us know that these are the celebrities and we then insert our `Celebrities()` function to get our generated list of celebrities. Now, we make a new section using the <article> tag and assigning it the class "assignments". This is where our list of pairings of kids and celebrities will go. Inside we have the <h2> subheading telling us this is our pairings, and now we dynamically insert our `Pairings()` function to get our generated list of pairings. Lastly, `mainContainer.innerHTML = applicationHTML` this is where the code takes all the HTML it built and actually places it onto the web page.
 
 
 
